@@ -1,0 +1,123 @@
+--=========================================================================
+--                          Modèle de classe
+---------------------------------------------------------------------------
+-- Ce modèle de classe est exprimé en ClassScript1.
+-- Voir https://modelscript.readthedocs.io/en/latest/languages/classes1/index.html
+-- ClassScript1 est une version annotée du langage USE OCL.
+-- Les annotations sont en commentaires et commencent par :
+--    "@" pour les annotations d'instructions,
+--    "|" pour les annotations de documentation.
+--=========================================================================
+--
+
+model VePick
+
+enum Etat {
+    OK,
+    HS
+}
+enum Sexe {
+    HOMME,
+    FEMME
+}
+enum StatusStation {
+    Vplus,
+    Vmoins,
+    Vnul
+}
+enum StatusVelo {
+    LIBRE,
+    MAINTENANCE,
+    LOUE
+}
+
+class Station
+    attributes
+        adresse : String
+        status : StatusStation
+end
+
+class Bornette
+    attributes
+        id : Integer
+        etat : Etat
+end
+
+class Modele
+     attributes
+          nom : String
+          coutHoraire : Real
+end
+
+class Velo
+    attributes
+        id : Integer
+        dateMiseEnService:String
+        etat:Etat
+        status:StatusVelo
+end
+
+class Client
+    attributes
+        id : Integer
+        carteBancaire:Integer
+end
+
+class ClientAbonne < Client
+    attributes
+        nom:String
+        prenom:String
+        dateNaissance:String
+        adresse:String
+        sexe:Sexe
+        codeSecret:String
+        creditTemps:Integer
+end
+
+class Abonnement
+    attributes
+        dateDebut:String
+        dateFin:String
+end
+
+class Location
+    attributes
+        dateDebut:String
+        dateFin:String
+        stationDepart:Station
+        stationArrive:Station
+end
+
+
+association APourBornettes
+    between
+        Station[1] role station
+        Bornette[1..*] role bornettes
+end
+
+association Acceuille
+     between
+          Velo[0..1] role velo
+          Bornette[0..1] role bornettes
+end
+
+association EstDeModele
+     between
+          Velo[0..*] role velo
+          Modele[1] role modele
+end
+association Comporte
+     between
+          Velo[1..*] role velo
+          Location[1] role location
+end
+association Effectue
+     between
+          Location[0..*] role locations
+          Client[1] role client
+end
+association Possede
+     between
+          Abonnement[1] role abonnement
+          ClientAbonne[1] role clientAbonne
+end

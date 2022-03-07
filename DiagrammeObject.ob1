@@ -1,0 +1,37 @@
+
+    !create s1 : Station
+    !s1.adresse := 'adresse 1'
+    !s1.status := StatusStation::Vmoins
+
+
+    !create s2 : Station
+    !s2.adresse := 'adresse 2'
+    !s2.status := StatusStation::Vplus
+
+    !create b1 : Bornette
+    !b1.id := 1
+    !b1.etat := Etat::OK
+
+    !create b2 : Bornette
+    !b2.id := 2
+    !b2.etat := Etat::OK
+
+    !create b3 : Bornette
+    !b3.id := 3
+    !b3.etat := Etat::OK
+
+    !create b4 : Bornette
+    !b4.id := 4
+    !b4.etat := Etat::HS
+
+    !create b5 : Bornette
+    !b5.id := 5
+    !b5.etat := Etat::OK
+
+    ! insert (s1,b1) into APourBornettes
+    ! insert (s1,b2) into APourBornettes
+    ! insert (s2,b3) into APourBornettes
+    ! insert (s2,b4) into APourBornettes
+    ! insert (s2,b5) into APourBornettes
+
+ 
