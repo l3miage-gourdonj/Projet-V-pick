@@ -1,0 +1,127 @@
+
+    !create station1 : Station
+    !station1.adresse := 'adresse 1'
+    !station1.status := StatusStation::Vmoins
+
+    !create station2 : Station
+    !station2.adresse := 'adresse 2'
+    !station2.status := StatusStation::Vplus
+
+    !create bornette1 : Bornette
+    !bornette1.id := 1
+    !bornette1.etat := Etat::OK
+
+    !create bornette2 : Bornette
+    !bornette2.id := 2
+    !bornette2.etat := Etat::OK
+
+    !create bornette3 : Bornette
+    !bornette3.id := 3
+    !bornette3.etat := Etat::OK
+
+    !create bornette4 : Bornette
+    !bornette4.id := 4
+    !bornette4.etat := Etat::HS
+
+    !create bornette5 : Bornette
+    !bornette5.id := 5
+    !bornette5.etat := Etat::OK
+
+    ! insert (station1,bornette1) into APourBornettes
+    ! insert (station1,bornette2) into APourBornettes
+    ! insert (station2,bornette3) into APourBornettes
+    ! insert (station2,bornette4) into APourBornettes
+    ! insert (station2,bornette5) into APourBornettes
+
+    !create velo1 : Velo
+    !velo1.id := 11
+    !velo1.dateMiseEnService := '01/01/2021'
+    !velo1.etat := Etat::OK
+    !velo1.status := StatusVelo::LOUE
+
+    !create velo2 : Velo
+    !velo2.id := 12
+    !velo2.dateMiseEnService := '01/01/2021'
+    !velo2.etat := Etat::OK
+    !velo2.status := StatusVelo::LIBRE
+    
+    !create velo3 : Velo
+    !velo3.id := 13
+    !velo3.dateMiseEnService := '01/01/2021'
+    !velo3.etat := Etat::OK
+    !velo3.status := StatusVelo::LOUE
+    
+    !create velo4 : Velo
+    !velo4.id := 14
+    !velo4.dateMiseEnService := '01/01/2021'
+    !velo4.etat := Etat::OK
+    !velo4.status := StatusVelo::LOUE
+
+    !create velo5 : Velo
+    !velo5.id := 15
+    !velo5.dateMiseEnService := '08/02/2019'
+    !velo5.etat := Etat::HS
+    !velo5.status := StatusVelo::MAINTENANCE
+
+    !create velo6 : Velo
+    !velo6.id := 16
+    !velo6.dateMiseEnService := '02/11/2021'
+    !velo6.etat := Etat::HS
+    !velo6.status := StatusVelo::LIBRE
+
+    !insert (bornette1,velo2) into Accueille
+    !insert (bornette5,velo6) into Accueille
+
+    !create modele1 : Modele
+    !modele1.nom := 'Godzilla'
+    !modele1.coutHoraire := 3.5
+
+    !create modele2 : Modele
+    !modele2.nom := 'PereCastor'
+    !modele2.coutHoraire := 2.99
+
+    !insert (velo1,modele1) into EstDeModele
+    !insert (velo2,modele1) into EstDeModele
+    !insert (velo4,modele1) into EstDeModele
+    !insert (velo3,modele2) into EstDeModele
+    !insert (velo5,modele2) into EstDeModele
+    !insert (velo6,modele2) into EstDeModele
+
+    !create client1 : Client
+    !client1.id := 21
+    !client1.carteBancaire := '1010 1010 1010 1010'
+
+    !create clientAbo1 : ClientAbonne
+    !clientAbo1.id := 31
+    !clientAbo1.carteBancaire := '1111 1111 1111 2221'
+    !clientAbo1.nom := 'Roger'
+    !clientAbo1.prenom := 'Jacques'
+    !clientAbo1.dateNaissance := '03/08/1961'
+    !clientAbo1.adresse := 'Grenoble'
+    !clientAbo1.sexe := Sexe::HOMME
+    !clientAbo1.codeSecret := 'azerty'
+    !clientAbo1.creditTemps := 5
+    !clientAbo1.dateDebutAbonnement := '04/04/2021'
+    !clientAbo1.dateFinAbonnement := '04/04/2022'
+
+    !create location1 : Location
+    !location1.dateDebut := '12/02/2021 11h21'
+    !location1.dateFin := '12/02/2021 12h08'
+    !location1.prix := 4.5
+
+    !insert (client1, location1) into Effectue
+    !insert (location1, station2) into APourStationDepart
+    !insert (location1, station1) into APourStationArrivee
+    !insert (location1, velo1) into Comporte
+
+    !create location2 : Location
+    !location2.dateDebut := '18/02/2021 13h01'
+    !location2.dateFin := '18/02/2021 15h34'
+    !location2.prix := 14.34
+
+    !insert (clientAbo1, location2) into Effectue
+    !insert (location2, station1) into APourStationDepart
+    !insert (location2, station2) into APourStationArrivee
+    !insert (location2, velo4) into Comporte
+    !insert (location2, velo3) into Comporte
+        

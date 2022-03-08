@@ -89,38 +89,38 @@ association APourBornettes
         Bornette[1..*] role bornettes
 end
 
-association Acceuille
+association Accueille
     between
-            Bornette[0..1] role bornette
-            Velo[0..1] role velo
+        Bornette[0..1] role bornette
+        Velo[0..1] role velo
 end
 
 association EstDeModele
-     between
-          Velo[0..*] role velos
-          Modele[1] role modele
+    between
+        Velo[0..*] role velos
+        Modele[1] role modele
 end
 
 association Comporte
-     between
-          Velo[1..*] role velos
-          Location[1] role location
+    between
+        Location[0..1] role location
+        Velo[1..*] role velos
 end
 
 association Effectue
-     between
-          Location[0..*] role locations
-          Client[1] role client
+    between
+        Client[1] role client
+        Location[0..*] role locations
 end
 
 association APourStationDepart
     between 
-        Location[0..*] role locations
+        Location[0..*] role locationsD
         Station[1] role stationDepart
 end
 
 association APourStationArrivee
     between 
-        Location[0..*] role locations
+        Location[0..*] role locationsA
         Station[1] role stationArrivee
 end
