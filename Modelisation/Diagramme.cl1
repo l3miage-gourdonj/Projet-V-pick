@@ -60,7 +60,7 @@ end
 class Client
     attributes
         id : Integer
-        carteBancaire:Integer
+        carteBancaire:String
 end
 
 class ClientAbonne < Client
@@ -72,22 +72,16 @@ class ClientAbonne < Client
         sexe:Sexe
         codeSecret:String
         creditTemps:Integer
-end
-
-class Abonnement
-    attributes
-        dateDebut:String
-        dateFin:String
+        dateDebutAbonnement:String
+        dateFinAbonnement:String
 end
 
 class Location
     attributes
         dateDebut:String
         dateFin:String
-        stationDepart:Station
-        stationArrive:Station
+        prix:Real
 end
-
 
 association APourBornettes
     between
@@ -96,28 +90,37 @@ association APourBornettes
 end
 
 association Acceuille
-     between
-          Velo[0..1] role velo
-          Bornette[0..1] role bornettes
+    between
+            Bornette[0..1] role bornette
+            Velo[0..1] role velo
 end
 
 association EstDeModele
      between
-          Velo[0..*] role velo
+          Velo[0..*] role velos
           Modele[1] role modele
 end
+
 association Comporte
      between
-          Velo[1..*] role velo
+          Velo[1..*] role velos
           Location[1] role location
 end
+
 association Effectue
      between
           Location[0..*] role locations
           Client[1] role client
 end
-association Possede
-     between
-          Abonnement[1] role abonnement
-          ClientAbonne[1] role clientAbonne
+
+association APourStationDepart
+    between 
+        Location[0..*] role locations
+        Station[1] role stationDepart
+end
+
+association APourStationArrivee
+    between 
+        Location[0..*] role locations
+        Station[1] role stationArrivee
 end

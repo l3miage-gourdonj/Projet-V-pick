@@ -1,0 +1,6 @@
+(C1) Le nombre total de bornette doit être supérieur ou égal au nombre total de vélo
+(C2) Un vélo en maintenance doit être HS ?
+(C3) Un vélo en maintenance ne doit pas être acceuilli par une bornette
+(C4) Un vélo loué ne doit pas être acceuilli par une bornette
+(C5) Un vélo libre doit être accueilli par une bornette
+(C6) Une bornette HS ne peut servir ni à l'emprunt ni au dépot d'un vélo. Elle peut néammoins accueillir un vélo (si elle est devenur HS alors qu'elle accueillait déjà un vélo)
