@@ -2,7 +2,9 @@
 
 Ce répertoire contient le projet de base de données de Mise en oeuvre d'une application de gestion de vélos en libre-service
 
-Sujet : https://im2ag-moodle.univ-grenoble-alpes.fr/pluginfile.php/74152/mod_resource/content/2/projet2022.pdf
+Sujet : [a relative link](sujet.pdf)
+
+Source: https://prograide.com/pregunta/2910/github-lien-relatif-dans-le-fichier-de-format-markdown
 
 # Membres
 * ELKHOU Chaymae
