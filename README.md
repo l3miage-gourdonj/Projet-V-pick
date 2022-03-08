@@ -2,7 +2,7 @@
 
 Ce répertoire contient le projet de base de données de Mise en oeuvre d'une application de gestion de vélos en libre-service
 
-Sujet : [a relative link](sujet.pdf)
+[Sujet](sujet.pdf)
 
 Source: https://prograide.com/pregunta/2910/github-lien-relatif-dans-le-fichier-de-format-markdown
 
