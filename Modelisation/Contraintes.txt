@@ -1,3 +1,5 @@
+Mainteance = Prendre un velo pour : le Réparer / Peindre / Ajouter une pièce 
+
 (C1) Le nombre total de bornette doit être supérieur ou égal au nombre total de vélo
 (C2) Une bornette HS ne peut servir ni à l'emprunt ni au dépot d'un vélo. Elle peut néammoins accueillir un vélo (si elle est devenue HS alors qu'elle accueillait déjà un vélo)
 (C3) Un vélo en maintenance doit être "HS"
