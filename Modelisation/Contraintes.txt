@@ -1,5 +1,5 @@
 (C1) Le nombre total de bornette doit être supérieur ou égal au nombre total de vélo
-(C2) Une bornette HS ne peut servir ni à l'emprunt ni au dépot d'un vélo. Elle peut néammoins accueillir un vélo (si elle est devenur HS alors qu'elle accueillait déjà un vélo)
+(C2) Une bornette HS ne peut servir ni à l'emprunt ni au dépot d'un vélo. Elle peut néammoins accueillir un vélo (si elle est devenue HS alors qu'elle accueillait déjà un vélo)
 (C3) Un vélo en maintenance doit être HS ?
 (C4) Un vélo en maintenance ne doit pas être accueilli par une bornette
 (C5) Un vélo loué ne doit pas être acceuilli par une bornette
@@ -8,12 +8,6 @@
 (C8) La date de début d'abonnement d'un client doit être inférieure à la date de fin d'abonnement
 (C9) La date de début d'une location doit être inférieure à la date de fin
 (C10) Le prix d'une location correspond à la somme des coûts horaires de tous les vélos loués multipliée par la durée de la location (réduction de 30% si le client est abonné)
-(C11) Si un client loue plusieurs vélos à la fois (en une seule location), il doit rendre tous les vélos en même
+(C11) Si un client loue plusieurs vélos à la fois (en une seule location), il doit rendre tous les vélos en même temps
 (C12) Le crédit-temps d'un client ne peut pas être négatif
-(C13) Un client dispose d'un délai de 5 minutes pour signaler si le vélo qu'il a récupéré est HS 
 
-
-Questions :
-- un client peut signaler si le vélo qu'il a loué est HS, est ce qu'on pourrait restreindre la location uniquement à des vélos OK ?
-    (A24) dit Dans tous les cas le système ouvre la première bornette occupée par une vélo du modèle demandé dans un état utilisable, ce qui restreint la récupération à un vélo OK ?
-- comment une borne reconnait un client abonné, identification ? Du coup il donne quand même son code   
