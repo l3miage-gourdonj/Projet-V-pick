@@ -76,33 +76,33 @@ class Modele
         coutHoraire : Real
 end
 
-association Effectue
-    between
-        Location[0..*] role locations
-        Client[1] role client
-end
-
-association Comporte
-    between
-        Velo[1..*] role velos
-        Location[0..1] role location
-end
-
 association APourBornettes
     between
         Station[1] role station
         Bornette[1..*] role bornettes
 end
 
-association Accueille
-    between
-        Velo[0..1] role velo
-        Bornette[0..1] role bornette
-end
-
 association EstDeModele
     between
         Velo[1..*] role velos
         Modele[1] role modele
+end
+
+association Accueille
+    between
+        Bornette[0..1] role bornette
+        Velo[0..1] role velo
+end
+
+association Effectue
+    between
+        Client[1] role client
+        Location[0..*] role locations
+end
+
+association Comporte
+    between
+        Location[0..1] role location
+        Velo[1..*] role velos
 end
 
