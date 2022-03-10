@@ -1,21 +1,17 @@
-Mainteance = Prendre un velo pour : le Réparer / Peindre / Ajouter une pièce 
+Mainteance = Prendre un velo pour : le Réparer / Peindre / Ajouter une pièce, donc pas nécéssairement HS
 
 (C1) Le nombre total de bornette doit être supérieur ou égal au nombre total de vélo
 (C2) Une bornette HS ne peut servir ni à l'emprunt ni au dépot d'un vélo. Elle peut néammoins accueillir un vélo (si elle est devenue HS alors qu'elle accueillait déjà un vélo)
-(C3) Un vélo en maintenance doit être "HS"
-(C3 BIS) Un vélo avec le status "HS" n'est pas forcement en maintenance ?
+(C3) Un vélo avec le status "HS" n'est pas forcement en maintenance
 
 (C4) Un vélo en maintenance ne doit pas être accueilli par une bornette
-(C4 BIS) Un vélo en maintenance ne doit pas être "loué" ?
 
 (C5) Un vélo avec le status "loué" ne doit pas être dans une bornette
-(C5 BIS) Un vélo avec le status "loué" ne doit pas être "HS" ?
 
 (C6) Un vélo avec le status "libre" doit être dans une bornette
-(C7) Un vélo avec le status "HS" ne peut pas être loué
-(C8) La date de début d'abonnement d'un client doit être inférieure à la date de fin d'abonnement
-(C9) La date de début d'une location doit être inférieure à la date de fin
-(C10) Le prix d'une location correspond à la somme des coûts horaires de tous les vélos loués multipliée par la durée de la location (réduction de 30% si le client est abonné)
-(C11) Si un client loue plusieurs vélos à la fois (en une seule location), il doit rendre tous les vélos en même temps
-(C12) Le crédit-temps d'un client ne peut pas être négatif
+(C7) La date de début d'abonnement d'un client doit être inférieure à la date de fin d'abonnement
+(C8) La date de début d'une location doit être inférieure à la date de fin
+(C9) Le prix d'une location correspond à la somme des coûts horaires de tous les vélos loués multipliée par la durée de la location (réduction de 30% si le client est abonné)
+(C10) Si un client loue plusieurs vélos à la fois (en une seule location), il doit rendre tous les vélos en même temps
+(C11) Le crédit-temps d'un client ne peut pas être négatif
 
