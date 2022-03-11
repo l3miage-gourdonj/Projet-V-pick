@@ -19,6 +19,8 @@ public class Velo {
 
     private Modele modele;
 
+    private Location location ;
+
     public int getId() {
         return id;
     }
@@ -65,5 +67,14 @@ public class Velo {
 
     public void setModele(Modele modele) {
         this.modele = modele;
+    }
+
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
     }
 }
