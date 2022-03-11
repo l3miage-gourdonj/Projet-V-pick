@@ -12,6 +12,8 @@ public class ClientAbonne extends Client{
     private Date dateNaissance;
 
     private String adresse;
+    
+    private Sexe sex;
 
     private String codeSecret;
 
@@ -51,6 +53,14 @@ public class ClientAbonne extends Client{
 
     public void setAdresse(String adresse) {
         this.adresse = adresse;
+    }
+    
+    public Sexe getSexe() {
+        return sexe;
+    }
+
+    public void setSexe(Sexe sexe) {
+        this.sexe =sexe;
     }
 
     public String getCodeSecret() {
