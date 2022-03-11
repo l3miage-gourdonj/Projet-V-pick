@@ -1,14 +1,20 @@
 package main.db.models;
 
+import java.util.List;
+
 public class Client {
-    private int id;
+
+    private long id;
+
     private String carteBancaire;
 
-    public int getId() {
+    private List<Location> locations;
+
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -18,5 +24,13 @@ public class Client {
 
     public void setCarteBancaire(String carteBancaire) {
         this.carteBancaire = carteBancaire;
+    }
+
+    public List<Location> getLocations() {
+        return locations;
+    }
+
+    public void setLocations(List<Location> locations) {
+        this.locations = locations;
     }
 }

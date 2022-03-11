@@ -2,15 +2,16 @@ package main.db.models;
 
 public class Modele {
 
-    private String modele;
+    private String nom;
+
     private float coutHoraire;
 
-    public String getModele() {
-        return modele;
+    public String getNom() {
+        return nom;
     }
 
-    public void setModele(String modele) {
-        this.modele = modele;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
     public float getCoutHoraire() {

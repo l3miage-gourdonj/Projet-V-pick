@@ -8,9 +8,16 @@ import java.util.Date;
 public class Velo {
 
     private int id;
+
     private Date dateMiseEnService;
+
     private Etat etat;
+
     private StatusVelo status;
+
+    private Bornette bornette;
+
+    private Modele modele;
 
     public int getId() {
         return id;
@@ -42,5 +49,21 @@ public class Velo {
 
     public void setStatus(StatusVelo status) {
         this.status = status;
+    }
+
+    public Bornette getBornette() {
+        return bornette;
+    }
+
+    public void setBornette(Bornette bornette) {
+        this.bornette = bornette;
+    }
+
+    public Modele getModele() {
+        return modele;
+    }
+
+    public void setModele(Modele modele) {
+        this.modele = modele;
     }
 }

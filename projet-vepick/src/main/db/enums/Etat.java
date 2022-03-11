@@ -1,6 +1,11 @@
 package main.db.enums;
 
 public enum Etat {
-    OK,
-    HS
+    OK("OK"), HS("HS");
+
+    private String nom;
+
+    Etat(String nom){
+        this.nom = nom;
+    }
 }

@@ -1,15 +1,24 @@
 package main.db.models;
 
-import java.util.Date;
+
+import java.sql.Date;
 
 public class ClientAbonne extends Client{
+
     private String nom;
+
     private String prenom;
+
     private Date dateNaissance;
+
     private String adresse;
+
     private String codeSecret;
+
     private int creditTemps;
+
     private Date dateDebutAbonnement;
+
     private Date dateFinAbonnement;
 
     public String getNom() {
