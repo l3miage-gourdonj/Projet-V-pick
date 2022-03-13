@@ -2,9 +2,10 @@
 
 Ce répertoire contient le projet de base de données de Mise en oeuvre d'une application de gestion de vélos en libre-service
 
-[Sujet](sujet.pdf)
-[Client Vpick](https://github.com/l3miage-gourdonj/VPickClient)
-[API Vpick](https://github.com/l3miage-gourdonj/VpickAPI)
+[Sujet](sujet.pdf)\
+[Client Vpick](https://github.com/l3miage-gourdonj/VPickClient)\
+[API Vpick](https://github.com/l3miage-gourdonj/VpickAPI)\
+
 # Membres
 * ELKHOU Chaymae
 * FRANCES Tom
