@@ -4,7 +4,7 @@ Ce répertoire contient le projet de base de données de Mise en oeuvre d'une ap
 
 [Sujet](sujet.pdf)\
 [Client Vpick](https://github.com/l3miage-gourdonj/VPickClient)\
-[API Vpick](https://github.com/l3miage-gourdonj/VpickAPI)\
+[API Vpick](https://github.com/l3miage-gourdonj/VpickAPI)
 
 # Membres
 * ELKHOU Chaymae
