@@ -13,4 +13,6 @@ Ce répertoire contient le projet de base de données de Mise en oeuvre d'une ap
 
 # Documents
 
+[Client Vpick](https://github.com/l3miage-gourdonj/VPickClient)
+[API Vpick](https://github.com/l3miage-gourdonj/VpickAPI)
 https://docs.google.com/document/d/1EFv_IXMfMNVuRmRDWUPkdWlvYi9ApRSftqHnRQMFiVk/edit?usp=sharing
